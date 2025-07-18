@@ -5,14 +5,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import Home from "@/pages/home";
-import Chatbot from "@/pages/chatbot";
 import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/chatbot" component={Chatbot} />
       <Route component={NotFound} />
     </Switch>
   );

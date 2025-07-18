@@ -14,25 +14,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <div id="mendable-component"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Mendable Chatbot Integration -->
-    <script src="https://unpkg.com/@mendable/search@0.0.205/dist/umd/mendable-bundle.min.js"></script>
-    <script>
-      // Initialize search bar component
-      Mendable.initialize({
-        anon_key: 'fb00560b-a370-4bee-9b53-9c40c5a45976',
-        type: "searchBar",
-        elementId: "mendable-component"
-      });
-      
-      // Initialize floating button
-      Mendable.initialize({
-        anon_key: 'fb00560b-a370-4bee-9b53-9c40c5a45976',
-        type: "floatingButton"
-      });
-    </script>
     
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>

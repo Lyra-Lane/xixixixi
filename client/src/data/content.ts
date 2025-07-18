@@ -10,7 +10,6 @@ export const content = {
     about: { en: "About", zh: "关于" },
     projects: { en: "Projects", zh: "项目" },
     blog: { en: "Blog", zh: "博客" },
-    chatbot: { en: "Chatbot", zh: "聊天机器人" },
     contact: { en: "Contact", zh: "联系" },
     langToggle: { en: "中文", zh: "English" }
   },
@@ -147,15 +146,6 @@ export const content = {
       title: { en: "Current Location", zh: "当前位置" },
       place: { en: "Berkeley, California, United States", zh: "美国加利福尼亚州伯克利" },
       status: { en: "Open to research collaborations and internship opportunities", zh: "开放研究合作和实习机会" }
-    }
-  },
-
-  // Chatbot Section
-  chatbot: {
-    title: { en: "AI Assistant", zh: "AI助手" },
-    subtitle: { 
-      en: "Chat with my AI assistant to learn more about my research, projects, and experience",
-      zh: "与我的AI助手聊天，了解更多关于我的研究、项目和经验"
     }
   },
 

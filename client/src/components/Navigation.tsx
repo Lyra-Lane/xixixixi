@@ -70,12 +70,6 @@ export function Navigation() {
               >
                 {t(content.nav.blog)}
               </button>
-              <a
-                href="/chatbot"
-                className="text-github-text hover:text-github-blue px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {t(content.nav.chatbot)}
-              </a>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-github-text hover:text-github-blue px-3 py-2 text-sm font-medium transition-colors"
@@ -133,12 +127,6 @@ export function Navigation() {
               >
                 {t(content.nav.blog)}
               </button>
-              <a
-                href="/chatbot"
-                className="block w-full text-left px-3 py-2 text-github-text hover:text-github-blue transition-colors"
-              >
-                {t(content.nav.chatbot)}
-              </a>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="block w-full text-left px-3 py-2 text-github-text hover:text-github-blue transition-colors"
