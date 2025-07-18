@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - ManYao Li</title>
+    <meta name="description" content="Chat with AI assistant about ManYao Li's research and projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .chatbot-container {
+            min-height: 100vh;
+            padding-top: 4rem;
+            background: #f8fafc;
+        }
+        
+        .chatbot-header {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .chatbot-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .chatbot-iframe-container {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 600px;
+        }
+        
+        .chatbot-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #2563eb;
+        }
+        
+        .chatbot-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chatbot-info h2 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .chatbot-info p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">ManYao Li</div>
+            <div class="nav-items">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./index.html#about" class="nav-link">About</a>
+                <a href="./index.html#projects" class="nav-link">Projects</a>
+                <a href="./index.html#contact" class="nav-link">Contact</a>
+                <button id="lang-toggle" class="lang-toggle">中</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <div class="container">
+                <h1 class="section-title">
+                    <span class="en">AI Chat Assistant</span>
+                    <span class="zh hidden">AI聊天助手</span>
+                </h1>
+            </div>
+        </div>
+        
+        <div class="chatbot-content">
+            <a href="./index.html" class="back-btn">
+                <span>←</span>
+                <span class="en">Back to Portfolio</span>
+                <span class="zh hidden">返回作品集</span>
+            </a>
+            
+            <div class="chatbot-info">
+                <h2>
+                    <span class="en">Chat with AI About My Research</span>
+                    <span class="zh hidden">与AI讨论我的研究</span>
+                </h2>
+                <p class="en">
+                    Ask questions about my research projects, academic background, or interests in data science and NLP. 
+                    The AI assistant can provide detailed information about my work and experience.
+                </p>
+                <p class="zh hidden">
+                    询问我的研究项目、学术背景，或对数据科学和自然语言处理的兴趣。
+                    AI助手可以提供关于我的工作和经验的详细信息。
+                </p>
+            </div>
+            
+            <div class="chatbot-iframe-container">
+                <iframe 
+                    src="https://www.chatbase.co/chatbot-iframe/YOUR_CHATBOT_ID" 
+                    class="chatbot-iframe"
+                    title="AI Chat Assistant">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
