@@ -10,8 +10,16 @@
 
 ### 方法二：使用GitHub Actions自动部署
 1. **创建GitHub仓库**并上传整个项目
-2. **配置GitHub Pages**：Settings > Pages > Source: GitHub Actions
-3. **推送代码**到main分支，自动部署将开始
+2. **配置GitHub Pages**：
+   - 进入 Settings > Pages
+   - Source 选择 "GitHub Actions"
+   - 保存设置
+3. **设置权限**：
+   - 进入 Settings > Actions > General
+   - 在 "Workflow permissions" 部分选择 "Read and write permissions"
+   - 勾选 "Allow GitHub Actions to create and approve pull requests"
+   - 保存设置
+4. **推送代码**到main分支，自动部署将开始
 
 ## 📁 部署文件清单
 
