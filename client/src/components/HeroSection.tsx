@@ -1,4 +1,4 @@
-import { Download, ExternalLink } from 'lucide-react';
+import { Download, ExternalLink, MessageCircle } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 import { content } from '@/data/content';
 import { Button } from '@/components/ui/button';
@@ -64,6 +64,13 @@ export function HeroSection() {
                 <Download className="w-4 h-4 mr-2" />
                 {t(content.hero.downloadCV)}
               </Button>
+              <a
+                href="/chatbot"
+                className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center"
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                {t(content.nav.chatbot)}
+              </a>
             </div>
           </div>
           <div className="animate-fade-in lg:animate-slide-in-right">

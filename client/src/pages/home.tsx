@@ -5,6 +5,7 @@ import { ProjectsSection } from '@/components/ProjectsSection';
 import { BlogSection } from '@/components/BlogSection';
 import { ContactSection } from '@/components/ContactSection';
 import { Footer } from '@/components/Footer';
+import { ChatbotButton } from '@/components/ChatbotButton';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <BlogSection />
       <ContactSection />
       <Footer />
+      <ChatbotButton />
     </div>
   );
 }
