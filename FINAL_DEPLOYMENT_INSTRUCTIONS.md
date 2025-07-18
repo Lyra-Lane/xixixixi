@@ -1,76 +1,51 @@
-# 🚀 最终部署说明
+# 🚨 紧急修复：GitHub Pages显示README而非网站
 
-## ✅ 您的网站已准备就绪！
+## 问题分析
+您看到README页面说明：
+1. GitHub Pages配置错误，或
+2. 网站文件没有正确上传到仓库根目录
 
-所有部署文件都在 `deploy-files/` 目录中：
+## 立即解决方案
 
+### 步骤1：检查GitHub Pages设置
+1. 进入您的GitHub仓库
+2. 点击 **Settings** 标签页
+3. 向下滚动到 **Pages** 部分
+4. 确认设置：
+   - **Source**: "Deploy from a branch"
+   - **Branch**: "main" 或 "master"
+   - **Folder**: "/ (root)"
+5. 点击 **Save**
+
+### 步骤2：确认文件结构
+您的仓库根目录必须包含：
 ```
-deploy-files/
-├── index.html          # 主页面
-├── 404.html           # SPA路由支持  
-├── .nojekyll          # 禁用Jekyll处理
-├── ManYao_Li_Resume.pdf # 简历文件
-└── assets/            # 静态资源
-    ├── index-CF56sCoZ.css     # 样式文件
-    ├── index-rN7p012H.js      # JavaScript文件
-    └── 证件照（长发）_1752817158476-BP8mR7sl.jpg # 头像
-```
-
-## 🌐 GitHub Pages 部署步骤
-
-### 1. 创建 GitHub 仓库
-- 登录 GitHub
-- 点击 "New repository"
-- 命名仓库（例如：`portfolio`）
-- 设为 Public（免费版需要公开仓库）
-
-### 2. 上传文件
-将 `deploy-files/` 目录中的**所有文件**（包括隐藏文件）上传到仓库根目录：
-
-**方法A：直接拖拽上传**
-- 在 GitHub 仓库页面点击 "uploading an existing file"
-- 拖拽所有文件到页面
-- 提交更改
-
-**方法B：使用 Git 命令**
-```bash
-git clone https://github.com/username/repository-name.git
-cd repository-name
-cp -r path/to/deploy-files/* .
-git add .
-git commit -m "Deploy portfolio website"  
-git push origin main
+/
+├── index.html          ← 这个是关键！
+├── 404.html
+├── .nojekyll
+├── ManYao_Li_Resume.pdf
+└── assets/
+    ├── index-CF56sCoZ.css
+    ├── index-rN7p012H.js
+    └── 证件照（长发）_1752817158476-BP8mR7sl.jpg
 ```
 
-### 3. 启用 GitHub Pages
-- 进入仓库 **Settings** 标签页
-- 滚动到 **Pages** 部分
-- **Source** 选择 "Deploy from a branch"
-- **Branch** 选择 "main"
-- **Folder** 选择 "/ (root)"
-- 点击 **Save**
+### 步骤3：删除README文件
+如果仓库中有 `README.md` 文件，请删除它。GitHub会优先显示README而不是index.html。
 
-### 4. 访问网站
-几分钟后，您的网站将在以下地址可访问：
-`https://username.github.io/repository-name`
+### 步骤4：强制重新部署
+1. 在任意文件中做小修改（比如在index.html末尾加个空格）
+2. 提交更改
+3. 等待3-5分钟
 
-## 🔧 功能验证清单
+### 步骤5：访问正确的URL
+确保访问：`https://您的用户名.github.io/仓库名`
+而不是：`https://github.com/您的用户名/仓库名`
 
-部署后请检查：
-- ✅ 主页正常显示
-- ✅ 中英文切换
-- ✅ 导航菜单工作
-- ✅ 聊天机器人页面（/chatbot）
-- ✅ 浮动聊天按钮
-- ✅ 简历下载功能
-- ✅ 移动端适配
+## 🎯 关键提醒
+- **必须有index.html在根目录**
+- **删除README.md文件**
+- **确认Pages设置正确**
 
-## 📞 如需帮助
-
-如遇问题：
-1. 检查 GitHub Pages 部署状态（仓库 Actions 标签页）
-2. 确认所有文件都已上传
-3. 验证 Pages 设置正确
-4. 等待 5-10 分钟让更改生效
-
-**您的专业双语个人网站即将上线！** 🎉
+如果还是显示README，说明index.html文件不在正确位置或者Pages设置有误。
