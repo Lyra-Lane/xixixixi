@@ -1,0 +1,130 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 1000
+>>
+stream
+BT
+/F1 18 Tf
+50 750 Td
+(ManYao Li - Resume) Tj
+0 -30 Td
+/F1 12 Tf
+(Berkeley, California, United States) Tj
+0 -20 Td
+(manyaoli@berkeley.edu | LinkedIn: linkedin.com/in/manyao-li-9a4436375) Tj
+0 -20 Td
+(GitHub: github.com/Lyra-lane | WeChat: xftvhunko111) Tj
+
+0 -40 Td
+/F1 14 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 12 Tf
+(Beijing Normal University) Tj
+0 -15 Td
+(Bachelor of Science in Statistics | 2023 – 2027 | GPA: 3.8/4.0) Tj
+
+0 -30 Td
+/F1 14 Tf
+(EXPERIENCE) Tj
+0 -20 Td
+/F1 12 Tf
+(Project Leader | Beijing Normal University | May 2025 – Present) Tj
+0 -15 Td
+(• Led research team of 4 students funded by Beijing Undergraduate Research Fund) Tj
+0 -15 Td
+(• Designed Chinese irony recognition model using LLaMA-2) Tj
+0 -15 Td
+(• Improved F1-score benchmarking against LSTM and RoBERTa) Tj
+
+0 -25 Td
+(Mathematics Teacher | Middle School of Fengtai | June 2024 – August 2024) Tj
+0 -15 Td
+(• Designed interactive math lessons for 40+ students) Tj
+0 -15 Td
+(• Awarded "Outstanding Educator" in summer practice program) Tj
+
+0 -30 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F1 12 Tf
+(Languages: Python, R, SQL, LaTeX) Tj
+0 -15 Td
+(Data Analysis: Pandas, NumPy, Matplotlib, Seaborn) Tj
+0 -15 Td
+(ML/NLP: LLaMA-2, RoBERTa, LSTM) Tj
+0 -15 Td
+(Tools: Git, EViews, Excel, SPSS) Tj
+
+0 -30 Td
+/F1 14 Tf
+(AWARDS) Tj
+0 -20 Td
+/F1 12 Tf
+(• First Prize, Market Research Competition (2025)) Tj
+0 -15 Td
+(• Second Prize, National Statistical Modeling Competition (2025)) Tj
+0 -15 Td
+(• Beijing Undergraduate Research Fund (PI role)) Tj
+0 -15 Td
+(• First-class Academic Scholarship (2x)) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000001324 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1403
+%%EOF
